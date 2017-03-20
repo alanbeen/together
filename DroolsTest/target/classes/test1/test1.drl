@@ -1,0 +1,20 @@
+package  droolscours
+import droolscours.Strings
+
+rule "test"
+	when 
+		Strings(str matches "[A-Z][a-z]+")  
+	then 
+		 System.out.println("true");
+		
+end
+rule "test1"
+	when 
+		 Strings(str matches "[A-Z][a-z]+")
+	then 
+	 	System.out.println("false");
+//		update(a);
+//		 System.out.println(ba);
+		
+end
+
